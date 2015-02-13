@@ -3,7 +3,6 @@
   include('CatClass.php');
   
   $mittens = new Cat();
-  $mittens->setPetName("Mr. Mittens");
-  echo $mittens->getPetName();
+  echo $jack->checkPetName("Mr. Mittens");
   
 ?>
