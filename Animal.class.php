@@ -4,7 +4,8 @@
   {
     public $isAlive = true;
     
-    private $petName;
+    protected $petName;
+    protected $DOB;
     
     public function setPetName($newPetName)
     {
@@ -14,6 +15,12 @@
     public function getPetName()
     {
       return $this->petName;
+    }
+
+    public function __construct($name)
+    {
+      $this->petName = $name;
+      $this->DOB = time();
     }
     
   }
