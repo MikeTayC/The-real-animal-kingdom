@@ -4,8 +4,14 @@ class Cat extends Animal
 {
   public function setPetName($newName)
   {
-    $this->petName = str_replace('r','s', $newName);
+    $this->petName = $this->checkPetName($newName);
   }
+  
+  private function checkPetName($petNameToCheck)
+  {
+    return str_replace('r','s', $petNameToCheck);
+  }
+  
 }
 
 ?>
