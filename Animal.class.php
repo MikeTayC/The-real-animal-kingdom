@@ -23,6 +23,11 @@
       $this->DOB = time();
     }
     
+    public function getDOB()
+    {
+      return $this->DOB;
+    }
+    
   }
     
   
