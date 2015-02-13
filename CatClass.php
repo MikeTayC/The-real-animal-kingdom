@@ -1,5 +1,7 @@
 <?php
 
+const TAX = 0.1;
+
 class Cat extends Animal
 {
   public function setPetName($newName)
@@ -17,6 +19,12 @@ class Cat extends Animal
     parent::__construct($name)
     $this->setPetNAme($name)
   }
+  
+  public function getPetPrice($price)
+  {
+    return $price + ($price * self::TAX);
+  }
+  
   
 }
 
