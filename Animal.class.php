@@ -4,7 +4,7 @@
   {
     public $isAlive = true;
     
-    public $petName;
+    private $petName;
     
     public function setPetName($newPetName)
     {
