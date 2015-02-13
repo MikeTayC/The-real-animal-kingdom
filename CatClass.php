@@ -12,6 +12,12 @@ class Cat extends Animal
     return str_replace('r','s', $petNameToCheck);
   }
   
+  public function __construct($name)
+  {
+    parent::__construct($name)
+    $this->setPetNAme($name)
+  }
+  
 }
 
 ?>
